@@ -48,10 +48,10 @@ public class RecordsFromCsvDAOIml implements RecordsFromCsvDAO {
 
             @Override
             public void setValues(PreparedStatement ps, int i) throws SQLException {
-                String[] customer = record.getStingbyNum(i);
-                ps.setString(1, customer[0]);
-                ps.setString(2, customer[1]);
-                ps.setString(3, customer[2]);
+                String[] fields = record.getStringbyNum(i);
+                ps.setString(1, fields[0]);
+                ps.setString(2, fields[1]);
+                ps.setString(3, fields[2]);
                 ps.setInt(4, numID);
                 ps.setTimestamp(5,getCurrentTimeStamp());
 

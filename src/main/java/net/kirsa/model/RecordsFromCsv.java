@@ -21,7 +21,7 @@ public class RecordsFromCsv {
     public List<String[]> getListOfStrings() {
             return listOfStrings;
         }
-    public String[] getStingbyNum(int i){
+    public String[] getStringbyNum(int i){
 
         return listOfStrings.get(i);
     }
