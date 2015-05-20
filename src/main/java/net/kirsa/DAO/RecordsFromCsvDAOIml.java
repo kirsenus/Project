@@ -24,7 +24,6 @@ public class RecordsFromCsvDAOIml implements RecordsFromCsvDAO {
 
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
-    private static final DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
     public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
